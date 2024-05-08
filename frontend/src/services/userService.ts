@@ -7,7 +7,7 @@ interface User {
 }
 const userService = () => {
   const apiClient = axiosInstance(
-    "http://localhost:3000/api"
+    "http://localhost:5001/api"
   );
   return (req: User) =>
     apiClient

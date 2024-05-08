@@ -6,7 +6,7 @@ This application provides authentication service like user registration and vali
 -----------------
 	#### 1. New User Registration:
 		HTTP Method: POST
-		URL:http://localhost:3000/api/users
+		URL:http://localhost:5001/api/users
 		Request: 
 			{
 				"name":"Sakthivel S",
@@ -27,7 +27,7 @@ This application provides authentication service like user registration and vali
 	
 	#### 2. Login / Authentication:
 		HTTP Method: POST
-		URL:http://localhost:3000/api/auth
+		URL:http://localhost:5001/api/auth
 		Request:
 			{
 				"email":"abc@test.com",

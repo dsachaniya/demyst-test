@@ -8,15 +8,15 @@ This repo contains source code for both accounts & decision engine services.
 			-> The valid input for **year is 2010 to 2023**
 	 		-> The valid input for **month is 1 to 12**
   ### API Endpoints:
-  	  1. http://localhost:3000/api/v1/balance-sheet/{year}
-	  2. http://localhost:3000/api/v1/balance-sheet/{year}/{month}
-	  3. http://localhost:3000/api/v1/balance-sheet?year=2021
-	  4. http://localhost:3000/api/v1/balance-sheet?year=2021&month=10
+  	  1. http://localhost:4001/api/v1/balance-sheet/{year}
+	  2. http://localhost:4001/api/v1/balance-sheet/{year}/{month}
+	  3. http://localhost:4001/api/v1/balance-sheet?year=2021
+	  4. http://localhost:4001/api/v1/balance-sheet?year=2021&month=10
 
   ### HTTP Method: GET
 
   ### Results:
-	 1. GET -> http://localhost:3000/api/v1/balance-sheet/2021
+	 1. GET -> http://localhost:4001/api/v1/balance-sheet/2021
 		Status Code -> 200
 				Respose: [
 		    {
@@ -45,7 +45,7 @@ This repo contains source code for both accounts & decision engine services.
 		    }
 		]
 
-     2. GET -> http://localhost:3000/api/v1/balance-sheet/2021/12
+     2. GET -> http://localhost:4001/api/v1/balance-sheet/2021/12
 	 Status Code -> 200
 	 Response: [{"year":2021,"month":12,"profitOrLoss":250000,"assetsValue":1234}]
   
@@ -54,7 +54,7 @@ This repo contains source code for both accounts & decision engine services.
  	This API is designed to provide eligibility status of loan application based on business preAssessment value.
 
    ### API Endpoint:
-   	1. http://localhost:3000/api/v1/decision-engine
+   	1. http://localhost:4001/api/v1/decision-engine
 
       **Request Body:**
 	      	{
@@ -66,11 +66,11 @@ This repo contains source code for both accounts & decision engine services.
    ### Http Method: POST 
 
    ### Results:
-   	POST -> http://localhost:3000/api/v1/decision-engine
+   	POST -> http://localhost:4001/api/v1/decision-engine
     	Request -> {"name":"abc company","establishedYear":"2015","profitOrLoss":23423,"preAssessment":100}
      	Response: { "isEligible": true, "approvedPercent": 100}
 
-        POST -> http://localhost:3000/api/v1/decision-engine
+        POST -> http://localhost:4001/api/v1/decision-engine
         Request -> {"name":"xyz company","establishedYear":"2022","profitOrLoss":3423,"preAssessment":50}
         Response: {"isEligible": false, "approvedPercent": 0}
 

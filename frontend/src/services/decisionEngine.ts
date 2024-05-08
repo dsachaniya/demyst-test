@@ -2,7 +2,7 @@ import axiosInstance from "./api-client";
 
 const decisionEngine = () => {
   const apiClient = axiosInstance(
-    "http://localhost:3000/api/v1/decision-engine"
+    "http://localhost:4001/api/v1/decision-engine"
   );
 
   return (request: any) =>

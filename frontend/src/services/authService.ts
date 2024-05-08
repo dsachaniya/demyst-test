@@ -6,7 +6,7 @@ export interface AuthUser {
 }
 const authService = () => {
   const apiClient = axiosInstance(
-    "http://localhost:3000/api"
+    "http://localhost:5001/api"
   );
   return (data: AuthUser) =>
     apiClient

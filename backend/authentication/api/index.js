@@ -10,6 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", users);
 app.use("/api/auth", auth);
 require("./startup/db")();
-app.listen(3000, () => console.log("Successfully listening on Port 3000"));
+app.listen(5001, () => console.log("Successfully listening on Port 5001"));
 
 module.exports = app;
